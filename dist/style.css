@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+}
+ul
+{
+  list-style: none;
+}
+
+/* Utility clases */
+.logo
+{
+  font-weight: 400;
+  margin-left: 5px;
+}
+.btn
+{
+  padding: 12px 30px;
+  border: 2px solid;
+  cursor: pointer;
+}
+.btn-primary
+{
+  border-color: #c36cbb;
+  background-color: #ffffff;
+  color: #c36cbb;
+  padding: 10px 45px;
+  margin-right: 25px;
+}
+
+.btn-secoundry
+{
+  background-color: #c36cbb;
+  border: none;
+  color: #ffffff;
+
+}
+/* Navbar */
+header
+{
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.cart , .logo-container 
+{
+  display: flex;
+}
+.logo-container 
+{
+  flex: 1;
+
+}
+nav
+{
+  flex: 2;
+  
+}
+nav ul
+{
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a
+{ 
+  color: #5f5f79;
+  font-size: 18px;
+  
+}
+.cart
+{
+  flex: 1;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+/* Section */
+#presentation
+{
+  height: 78vh;
+  width: 90%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: auto;
+  /* grid-gap: 4rem; */
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+/* #presentation .introduction
+{
+  flex: 1;
+}*/
+
+#presentation .introduction .text-content h1
+{
+  color: #5f5f79;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 5px;
+
+}
+#presentation .introduction .text-content p
+{
+  font-size: 22px;
+  color: #5f5f79;
+  line-height: 1.5;
+} 
+#presentation .cta img
+{
+  width: 410px;
+  /* flex: 1; */
+  height: 60vh;
+  filter: drop-shadow(0px 6px 3px black);
+  animation: drop 1.5s ease-out;
+} 
+
+.text-content
+{
+  margin-bottom: 6rem;
+}
+
+/* cover */
+.big-circle
+{
+  position: absolute;
+  top: 0px;
+  right:0px;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.7;
+}
+.mid-circle
+{
+  position: absolute;
+  top: 30%;
+  right:30%;
+  z-index: -1;
+  height: 60%;
+  opacity: 0.6;
+}
+.small-circle
+{
+  position: absolute;
+  bottom:0px;
+  left: 20%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* labtop select */
+#labtop
+{
+  width: 15%;
+  position: absolute;
+  right: 18%;
+  margin-bottom: 10px ;
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes drop
+{
+  0%
+  {
+     opacity: 0;
+     transform: translateY(-80px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@media screen and (max-width:1000px)
+{
+  #presentation
+  {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #presentation .introduction .text-content h1
+  {
+    font-size: 30px;
+
+  }
+  #presentation .introduction .text-content p
+  {
+    font-size: 16px;
+  }
+  .text-content
+{
+  margin-bottom: 3rem;
+}
+#presentation .cta img
+{
+  width: 300px;
+  /* flex: 1; */
+  height: 45vh;
+  filter: drop-shadow(0px 6px 3px black);
+  animation: drop 1.5s ease-out;
+} 
+#labtop
+{
+  width: 20%;
+  position: absolute;
+  right: 40%;
+  bottom: 2%;
+  margin: auto;
+  margin-bottom: 10px ;
+  display: flex;
+  /* justify-content: space-around; */
+}
+}
+
+
+
+
+
+
